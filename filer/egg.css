@@ -1,0 +1,162 @@
+#eggSeksjon {
+    position: fixed;
+    opacity: 0.75;
+    top: 5%;
+    z-index: 1;
+
+    animation:skallFarge 7s infinite;
+    -webkit-animation:skallFarge 7s infinite; /* Safari and Chrome */
+
+    /*
+    *- Alle webkit-innstillingene gjør at dette dokumentet ikke validerer som CSS3, men 
+    *de er nødvendige for at siden skal vises sånn det er ment i disse browserne.
+    *Siden dette er et eget css-dokument
+    *for easter-egget og ikke nødvendig for hovedsiden, har vi derfor valgt å ha det med likevel.
+    */
+}
+
+#eggehvitte {
+    opacity: 0.6;
+    position: fixed;
+    top: 15%;
+    z-index: 100;
+
+    animation:hvitteFarge 5s infinite;
+    -webkit-animation:hvitteFarge 5s infinite; /* Safari and Chrome */
+}
+
+#plomme {
+    opacity: 0.4;
+    position: fixed;
+    top: 25%;
+    z-index: 200;
+
+    animation:plommeFarge 10s infinite;
+    -webkit-animation:plommeFarge 10s infinite; /* Safari and Chrome */
+}
+
+#plomme2 { 
+
+    opacity: 1.0;
+    position: fixed;
+    top: 25%;
+    z-index: 300;
+
+}
+
+#startEggKnapp {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+}
+
+#plomme2 div {
+
+    font-family: sans-serif;
+    display: block;
+    padding: 30px;
+    text-shadow: 1px 1px #000;
+    font-size: 115%;
+    font-weight: bold;
+
+}
+
+.fremtid {
+    font-size: 600%;
+    position: fixed;
+    display:none;
+    font-weight: bold;
+    z-index: 1000;
+    text-shadow: 4px 4px #000;
+}
+
+#frem1 {
+    left: 10%;
+    top: 10%;
+}
+
+#frem2 {
+    left: 20%;
+    top: 40%;
+}
+
+#frem3 {
+    left: 20%;
+    top: 55%;
+    font-style:italic;
+    font-size: 900%;
+    color: #47FF47;
+
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);                
+    transform: rotate(180deg); 
+}
+
+#frem4 {
+    left: 30%;
+    top: 70%;
+    color: red;
+}
+
+.fremtid2 {
+    font-size: 150%;
+    position: fixed;
+    display: none;
+}
+
+
+@keyframes skallFarge {
+    0%   {background:#003300;}
+    25%  {background:purple;}
+    50%  {background:rgb(136,126,53);}
+    75%  {background:rgb(249,150,212);}
+    100% {background:black;}
+}
+
+@-webkit-keyframes skallFarge /* Safari and Chrome */
+{
+    0%   {background:#003300;}
+    25%  {background:rgb(97,218,177);}
+    50%  {background:rgb(136,126,0);}
+    75%  {background:rgb(249,150,212);}
+    100% {background:black;}
+}
+
+
+@keyframes hvitteFarge {
+    0%   {background:#7A0029;}
+    25%  {background:#66FF99}
+    50%  {background:rgb(13,170,141);}
+    75%  {background:#A30000;}
+    100% {background:rgb(44,97,5);}
+}
+
+@-webkit-keyframes hvitteFarge /* Safari and Chrome */
+{
+    0%   {background:#7A0029;}
+    25%  {background:#66FF99}
+    50%  {background:rgb(13,170,141);}
+    75%  {background:#A30000;}
+    100% {background:rgb(44,97,5);}
+}
+
+
+@keyframes plommeFarge {
+    0%   {background:#005C00;}
+    25%  {background:#0000B2;}
+    50%  {background:#00FFFF;}
+    75%  {background:#800080;}
+    100% {background:#FFFF00;}
+}
+
+@-webkit-keyframes plommeFarge /* Safari and Chrome */
+{
+    0%   {background:#005C00;}
+    25%  {background:#0000B2;}
+    50%  {background:#00FFFF;}
+    75%  {background:#800080;}
+    100% {background:#FFFF00;}
+}

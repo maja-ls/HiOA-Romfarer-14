@@ -1,0 +1,481 @@
+body {
+    background-image: url('bilder/space.jpg');
+    background-size: cover;
+    background-repeat:repeat-y;
+    background-attachment:fixed;
+    font-size: medium;
+    color: #eef;
+    line-height: 1.5;
+    font-weight: 600;
+}
+section {
+    opacity: 0.86;
+    margin-bottom: 40px;
+}
+#base {
+    background-color: black;
+    padding:50px;
+    margin-right: auto;
+    margin-left:auto;
+    max-width:1000px;
+    min-width: 750px;
+    margin-top: 10px;
+    border-radius: 5px;
+    min-height: 600px;
+}
+header {
+    margin-left:auto;
+    margin-right: auto;
+    height: 180px;
+    text-align: center;
+    background-image: url('bilder/romfarer3.png');
+    background-size:370px 180px;
+    background-repeat:no-repeat;
+    color: white;
+}
+nav {
+    margin-right: auto;
+    margin-left: auto;	
+    border-bottom: solid 1px white;
+}
+nav div {
+    display: inline-block;
+    text-align:center;
+}
+#navknapper, #undersideknapper {
+    display: inline;
+}
+nav a{
+    padding:5px;
+    margin-top: 5px;
+    margin-bottom: 5px;   
+}
+nav a:hover {
+    color: #89E;
+}
+.navLink {
+    -moz-transition:background-color 1s;
+    -webkit-transition:background-color 1s;
+    -o-transition:background-color 1s;
+    transition:background-color 1s;
+}
+.navLink:hover {
+    border: solid 1px #29E;
+    padding: 4px;
+}
+footer {
+    padding:50px;
+    margin-left:auto;
+    margin-right: auto;
+    opacity: 0.7;
+    margin-top: 10px;
+    text-align: center;
+}
+a {
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration:none;
+    color:#99B;
+    font-weight:bold; 
+}
+a:hover, a:active {
+    background-color:#111;
+}
+sup {
+    font-size: 50%;
+}
+form {
+    width: 40%;
+    padding: 20px;
+    border: solid white 1px;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+form div {
+    padding: 5px;
+}
+textarea {
+    height: 130px;
+    width: 100%;
+    resize: vertical;
+    max-height: 500px;
+}
+header h1 {
+    font-family: arial;
+}
+h1 {
+    font-family: 'Allan', cursive;
+}
+ul {
+    text-align: left;
+}
+.nyPlanetSkip {
+    border-bottom: solid 1px white;
+    padding-bottom: 3%;
+    padding-top: 15px;
+}
+.klar {
+    clear:both;
+}
+figcaption {
+    font-size: 110%;
+    font-weight: bold;
+    text-align: center;
+}
+.pris {
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    border: double 5px grey;
+    border-radius: 5px;
+}
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+.overtekst {
+    font-size: 115%;
+    margin-top: 10px;
+}
+.midtstill {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+}
+/* Innstillinger for forsiden *************************************************/
+.forsideTekst {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+}
+/* Forsideinnstillinger slutt *************************************************/
+/* Innstillinger for planeter *************************************************/
+.planetTekst {
+    width:60%;
+    margin-left: 40%;
+}
+.pris span {
+    display: inline-block;
+}
+/* Planetinnstillinger slutt **************************************************/
+/* Innstillinger for romskip **************************************************/
+.skipsTekst {
+    width:60%;
+    margin-right: 40%;
+}
+/* Skipstinnstillinger slutt **************************************************/
+/* Innstillinger for faq ******************************************************/
+#faqseksjon h3, #faqseksjon li, #faqseksjon a {
+    font-style:italic;
+    color: #AFF;
+}
+li a {
+    text-decoration: underline;
+}
+li a:hover {
+    background-color: #222;
+}
+/* faqinnstillinger slutt *****************************************************/
+/* Endring av fontstørrelse og kontrast ***************************************/
+#fontNormal {
+    font-size: x-small;
+    padding-left: 7px;
+}
+#fontMedium {
+    font-size: small;
+}
+#fontStor {
+    font-size: medium;
+}
+.javabuttons a {
+    padding: 0px;
+    padding-left: 3px;
+    border-radius: 0px;
+}
+.javabuttons a:hover {
+    background-color: black;
+    text-decoration: underline;
+}
+.javabuttons {
+    display:none;
+    text-align: right;
+    padding: 5px;
+    padding-left: 8px;
+    border-left: 1px solid #fff;
+}
+#fontendreholder {
+    border: none;
+}
+.red {
+    color:red;
+}
+/* Slutt fontstørrelse og kontrast ********************************************/
+
+
+/* Slutt på hovedseksjonen av css *********************************************/
+
+
+
+
+
+/* Media queries **************************************************************/
+@media only screen and (min-width: 985px) { /* Floatinnstillinger for store nok skjermer */
+    .javabuttons {
+        float: right;
+    }
+    .skipsBilde {
+        float:right;
+    }
+    .planetBilde {
+        float:left;
+    }
+}
+
+
+/* For lite vindu for opprinnelig meny */
+@media only screen and (min-width: 1px) and (max-width: 984px) { 
+
+    section {
+        margin-bottom: 40px;
+    }
+    #base {
+        padding:20px;
+        max-width: 850px;
+        min-width: 600px;
+        min-height: 600px;
+    }
+    #navknapper {
+        display: block;
+        border-top: solid 1px white;
+        padding-bottom: 0px;
+    }
+    #undersideknapper {
+        display:block;
+    }
+    header {
+        height: 162px;
+        background-size: 333px 162px;
+    }
+    header h1 {
+        font-size: x-large;
+    }
+    footer {
+        padding:20px;
+        margin-top: 10px;
+    }
+    sup {
+        font-size: 40%;
+    }
+    form {
+        width: 50%;
+        max-width: 357px;
+    }
+    textarea {
+        height: 100px;
+        resize: vertical;
+    }
+    .nyPlanetSkip {
+        border-bottom: solid 1px white;
+        padding-bottom: 3%;
+        padding-top: 15px;
+    }
+    .nyPlanetSkip h3 {
+        font-size: 100%;
+    }
+    figcaption {
+        font-size: 90%;
+    }
+    .pris {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+        border: double 5px grey;
+        border-radius: 5px;
+    }
+    img {
+        width: 60%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        border: 1px solid white;
+    }
+    .overtekst {
+        font-size: 105%;
+        margin-top: 10px;
+    }
+    .midtstill {
+        max-width: 90%;
+        padding-top: 2%;
+    }
+    /* Innstillinger for planeter *********************************************/
+    .planetTekst {
+        width:80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /* Planetinnstillinger slutt **********************************************/
+    /* Innstillinger for romskip **********************************************/
+    .skipsTekst {
+        width:80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /* Skipsinnstillinger slutt ***********************************************/
+    /* Endring av fontstørrelse og kontrast ***********************************/
+    #fontendreholder {
+        padding-right: 10px;
+    }
+    /* Slutt fontstørrelse og kontrast ****************************************/
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 425px) and (max-width: 664px) { /* Veldig liten skjerm, under 665px bred, ned til 425 */
+
+    section {
+        margin-bottom: 20px;
+    }
+    #base {
+        padding:10px;
+        max-width: 600px;
+        min-width: 380px;
+    }
+    header {
+        height: 200px;
+        background-size: 266px 130px;
+    }
+    header h1 {
+        font-size: large;
+        padding-top: 130px;
+    }
+    form {
+        width: 80%;
+    }
+    .pris {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+    .pris span {
+        display: block;
+    }
+    img {
+        width: 90%;
+        max-width: 300px;
+    }
+    .overtekst {
+        font-size: 100%;
+    }
+    .midtstill {
+        max-width: 95%;
+    }
+    /* Innstillinger for planeter *********************************************/
+    .planetTekst {
+        width:95%;
+    }
+    /* Planetinnstillinger slutt **********************************************/
+    /* Innstillinger for romskip **********************************************/
+    .skipsTekst {
+        width:95%;
+    }
+    /* Skipsinnstillinger slutt ***********************************************/
+
+}
+
+
+
+@media only screen and (max-width: 424px) { /* Knøttliten skjerm, under 425px bred */
+
+    body {
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    section {
+        margin-bottom: 10px;
+    }
+    #base {
+        padding:0px;
+        max-width: 424px;
+        min-width: 300px;
+        margin-top: 0px;
+    }
+    header {
+        height: 150px;
+        background-size: 213px 104px;
+    }
+    header h1 {
+        font-size: medium;
+        padding-top: 104px;
+    }
+    sup {
+        font-size: 60%;
+    }
+    form {
+        width: 80%;
+    }
+    .nyPlanetSkip {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .pris {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+    .pris span {
+        display: block;
+    }
+    img {
+        width: 100%;
+        max-width: 300px;
+    }
+    .overtekst {
+        font-size: 100%;
+    }
+    .midtstill {
+        max-width: 95%;
+    }
+    #faqseksjon ul {
+        padding: 0px;
+        margin: 5px;
+    }
+    #faqseksjon ul li {
+        padding-top: 10px;
+    }
+    /* Innstillinger for planeter *********************************************/
+    .planetTekst {
+        width:95%;
+    }
+    /* Planetinnstillinger slutt **********************************************/
+    /* Innstillinger for romskip **********************************************/
+    .skipsTekst {
+        width:95%;
+    }
+    /* Skipsinnstillinger slutt ***********************************************/
+    #fontendreholder {
+        border: none;
+    }
+    #kontrastknappholder {
+        border: none;
+    }
+    #undersideknapper div {
+        display: block;
+        border-top: 1px solid white;
+    }
+}

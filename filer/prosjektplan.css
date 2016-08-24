@@ -1,0 +1,130 @@
+body {
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    font-size: 15px;
+    background-color: black;
+    line-height: 1.5;
+}
+
+section {
+    background-color: #2EB8B8;
+    padding : 30px;
+
+    margin-right: auto;
+    margin-left: auto;
+    
+
+    border-radius: 15px;
+}
+
+#toppseksjon {
+    max-width: 800px;
+    min-width: 650px;
+}
+
+.underseksjon {
+    margin-top: 25px;
+    border: solid 1px black;
+}
+
+img {
+    margin-bottom: 30px;
+    margin-top: 8px;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+h4 {
+    margin-bottom: 4px;
+}
+
+nav {
+    position: fixed;
+    top: 10px;
+    left: 5px;
+    background-color: #2A9583;
+    width: 150px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+nav a {
+    display: block;
+    padding: 5px;
+            color: beige;
+                    border: solid 1px black;
+
+        text-decoration: none;
+        background-color: #2A9583;
+        border-radius: 5px;
+        margin-top: 10px;
+}
+    nav a:hover {
+        color: black;
+    }
+
+a {
+    font-weight: bold;
+    padding: 5px;
+    display: inline-block;
+}
+
+@media only print {
+    body {
+        font-family: Verdana, Helvetica, Serif;
+        font-size: 10px;
+    }
+
+    #toppseksjon {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    img {
+        display: inline;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        border-radius: 0px;
+    }
+
+    .underseksjon {
+        border:none;
+        margin-top: 10px;
+
+    }
+
+    section {
+        border-radius: 0px;
+    }
+
+    nav {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1250px) {
+    nav {
+        position: static;
+        width: 100%;
+        padding: 5px;
+        margin-left:auto;
+        margin-right: auto;
+
+    }
+    nav a {
+        display: inline-block;
+        padding: 5px;
+        margin-top: 5px;
+
+    }
+
+}

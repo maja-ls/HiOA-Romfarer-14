@@ -1,0 +1,17 @@
+For å komme til Easteregget, gå til 
+
+http://student.cs.hioa.no/~s198515/romfarer-14/index.php?page=5
+
+
+I navnefeltet, skriv "Jeg" (case-sensitivt)
+
+I epostfeltet, skriv "vil"
+
+I spørsmålsfeltet, skriv "på tur"
+
+Ikke inkluder "-ene
+
+
+Trykk på om registrert kunde eller ikke, og velg en kategori, siden de er obligatoriske felt
+
+Trykk på knappen
